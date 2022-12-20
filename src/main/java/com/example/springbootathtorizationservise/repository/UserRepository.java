@@ -27,7 +27,6 @@ public class UserRepository {
 
 
     public List<Authorities> getUserAuthorities(String user, String password) {
-        System.out.println(user + "  " + password);
         if (!this.usersPasswordsMap.containsKey(user) || !this.usersPasswordsMap.get(user).equals(password)) {
             return Collections.emptyList();
         }else {
